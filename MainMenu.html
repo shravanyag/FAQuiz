@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>FAQuiz</title>
+		<link rel="icon" type="image/gif/png" href="image1.png">
+	</head>
+	
+	<link rel="stylesheet" type="text/css" href="MainMenu.css">
+	
+	<body>
+		<p id="name">FAQuiz</p>
+		<a href="login.html" id="login" >LogIn</a>
+		<a href="wtwhy.html" id="Why" >Why FAQuiz</a>
+		<a href="#" id="new">What's New</a>
+		<a href="projest.html" id="win">Contests</a>
+		
+		<img src="digital-intelligence.png" height="70px" width="70px">
+		
+		<div style="" onmousemove="printfunc(event)" onmouseout="printdel(event)">
+			
+			<video playsinline autoplay muted loop  id="bg">
+			<source src="bg2.mp4" type="video/mp4">
+			</video>
+
+			<img src="best.png" id="best" height="150px" width="150px">
+		</div>
+		<div style="" onmousemove="printfunc(event)" onmouseout="printdel(event)">
+			<div id="sake1"></div>
+			<div id="sake2"></div>
+			<pre id="getsmart">    Presenting a better and 
+    faster way to get smarter</pre>
+		
+		</div>
+		
+		<div class="options">
+			
+			<div class="just"><br></div>
+			<img id="ind" src="individual.png"  height="90px" width="90px"><span>Take  the  Quiz  Now</span></img>
+			<button class="button">Go to Quiz</button>
+		
+		</div>
+	
+		<div class="options" id="q">
+			
+			<div class="just" id="q1"><br></div>
+			<img id="ind" src="compete.png"  height="90px" width="90px"><span>Challenge your Friends</span></img>
+			<button class="button" id="q2">Compete</button>
+	
+		</div>
+		<pre id="progress">
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<p id="ad">NOT ONE BUT MANY REASONS WHY FAQuiz IS THE THING!</p>
+		<img id="reasons" src="progress.png" height="450px" width="450px" onmousemove="fadefunc(event)" onmouseout="fadedel(event)"></img>
+		<div id="nextline" style="background-color:#F1CEC7" style="height:1000px ;width:1200px;">
+		<button class="button" id="demo">Take a Demo</button>
+		<img src="pes.png"></img>
+		
+			<img id="follow" src="follow.png"></img>
+		</div>
+			</pre>
+			<div id="now">
+			<img id="smart" class="appear" src="knowledgeIcon.png"></img>
+			<img id="fast" class="appear" src="faster.png"></img>
+			<img id="everything" class="appear" src="knowworld.png"></img>
+			<img id="classroom" class="appear" src="morefunthanclassrrom.png"></img>
+			<img id="money" class="appear" src="neednotpay.png"></img>
+			<img id="video" class="appear" src="video.png"></img>
+		</div>
+			<div class="lr">
+			<div align="center" id="l">KNOW WHERE YOU STAND</div>
+			<div  align="center" id="r">WIN EXCITING PRIZES</div>
+		</div>
+		<footer>Copyright © FAQuiz</footer>
+		<script>
+			function printfunc(e){
+				document.getElementById("getsmart").style.color = "#402313";
+				document.getElementById("getsmart").style.textShadow = "3px 3px 20px #FBFAFA";				
+			}
+			function printdel(e){
+				document.getElementById("getsmart").style.color = "#FCFAFA";
+				document.getElementById("getsmart").style.textShadow = "2px 2px 50px #020000";
+			}
+			function fadefunc(e){
+				 var x=document.getElementsByClassName("appear");
+				 var i;
+				 for(i=0;i<6;i++){
+					x[i].style.WebkitAnimationName ="example";
+					x[i].style.display="block";
+				 }
+			}
+			function fadedel(e){
+				var x=document.getElementsByClassName("appear");
+				for(i=0;i<6;i++){
+					x[i].style.WebkitAnimationName ="none";
+					x[i].style.display="none";
+				 }
+				<!---webkit-animation-name: example; /* Chrome, Safari, Opera */-->
+				<!---webkit-animation-duration: 4s; -->
+			}
+		</script>
+		<br/>
+		<br/>
+	</body>
+</html>
