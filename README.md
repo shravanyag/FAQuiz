@@ -8,4 +8,5 @@ Technical Features of the Mini Project:
   2) Animation using HTML5 and CSS
   3) Dynamic features of web page using PHP to interact with centralised server
   4) Dynamic features of web page using JavaScript for user login authentication
+
 UPLOADING AND UPDATING IN PROGRESS
